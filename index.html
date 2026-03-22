@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashima Ridzuan</title>
+<!-- t This site is designed and coded by Ashima Ridzuan -->
+ <!--Description: Portfolio site of Ashima Ridzuan, UI/UX designer and web developer with a background in IT Support and Knowledge Management. Showcasing skills, projects, and playful interactive elements.-->
+
+<!-- Favicon -->
+<link rel="icon" href="./assets/favicon_tab_clover.svg" image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Schoolbell&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- Typed.js for animated text -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="javascript.js" defer></script>
+</head>
+<body>
+
+<header>
+
+  <!-- Sun Effect -->
+<!-- Sun effect -->
+<div id="sun-container">
+  ☀️
+  <div id="sun-instruction">Drag away</div>
+</div>
+
+<div id="sun-overlay"></div>
+<div id="candle-popup">🕯️</div>
+
+  <!-- End Sun Effect -->
+
+  <div>
+   <strong class="top-word"><a href="#">Ashima Ridzuan</a></strong></div>
+  </div>
+  <nav>
+    <a href="#about"><img src="./assets/Pink_AboutMe_icon.svg" width="20" height="20" viewbox="0 0 24 24">About</a>
+    <a href="#skills"><img src="./assets/Pink_Skills_icon.svg" width="20" height="20" viewbox="0 0 24 24">Skills</a>
+    <a href="#projects"><img src="./assets/Pink_Code_icon.svg" width="20" height="20" viewbox="0 0 24 24">Projects</a>
+    <a href="#playground"><img src="./assets/Pink_Playground_icon.svg" width="20" height="20" viewbox="0 0 24 24">Playground</a>
+   <!-- <a href="#contact"><img src="Pink_Contact_icon.svg" width ="20" height="20" viewbox="0 0 24 24">Contact</a>  !-->
+  </nav>
+
+
+</header>
+
+<section class="hero">
+  <h1 id="hero-text">Hello, I'm <span class="hero-hover ashima-bouncy">Ashima</span></h1>
+  <p>Passionate about creating <span class="scroll-keywords"></span> experiences.</p>
+  <a href="#projects" style="padding:0.8rem 1.5rem; background:#FF6B81; color:#fff; border-radius:5px;">View Projects</a>
+<br><br>
+
+<div class="ashima-character">
+  <img src="./assets/Atashi.svg" alt="Ashima_character_svg" id="ashima_character_svg" width="100">
+  <div class="ashima-thoughtbubble" id="ashima-thoughtbubble">
+  </div>
+    </div>
+
+
+</section>
+
+
+
+<section id="about">  <!-- Delete class="about"-->
+  <br>
+  <h2>
+    <img src="./assets/Pink_AboutMe_icon.svg" width="24" height="24" viewBox="0 0 24 24">  About Me
+  </h2>
+  <p>I come from IT Support and Knowledge Management,
+    and I’m learning UX/UI design to make digital experiences easier for people and maybe even make someone’s day a little brighter.
+    Enjoy creating interfaces that are clear, friendly, minimal, and playful.  <img src="./assets/favicon_tab_clover.svg" width="15"></p>
+    <p></p><br>
+  <!--<p>Test_Engineering taught me structure, design teaches me empathy (and yeap I’m trying to blend both.)   <img src="favicon_tab_clover.svg" width="25"></p> -->
+</section>
+
+<section id="skills">
+  <br>
+  <h2>
+   <img src="./assets/Pink_Skills_icon.svg" width="24" height="24" viewBox="0 0 24 24">
+    Skills and Tools
+  </h2>
+  <div class="skills">
+    <div class="skill"><h4>HTML/CSS</h4>Advanced<br><tagskill_webdev>Web Dev</tagskill_webdev>
+      <br>
+     <p style="font-style: italic; font-size: smaller;"><a href="https://github.com/ashimaridzuan/Front-End-Notes" target="_blank" style="color:#FF6B81">note</a></p>
+    </div>
+    <div class="skill"><h4>JavaScript</h4>Intermediate<br><tagskill_webdev>Web Dev</tagskill_webdev></div>
+    <div class="skill"><h4>Wireframing/Figma</h4>Intermediate<br><tagskill_uiux>UI/UX</tagskill_uiux></div>
+    <div class="skill"><h4>KB Structuring</h4>Advanced<br><tagskill_itsupportkm>KM</tagskill_itsupportkm></div>
+    <div class="skill"><h4>Python</h4>Beginner<br><tagskill_tool>Object-Oriented Programming</tagskill_tool></div>
+  </div>
+  <p></p>
+</section>
+
+<section id="projects">
+  <br>
+  <h2>
+    <img src="./assets/Pink_Code_icon.svg" width="24" height="24" viewBox="0 0 24 24">
+    Projects and Case Studies
+  </h2>
+  <div class="projects">
+    <div class="project-card"><h4>In Progress</h4><br>A mini-app prototype built in Figma</div>
+    <!-- <div class="project-card"><h4>Upcoming soon</h4><br>A mini-app prototype built in Figma.</div> !-->
+    <!-- <div class="project-card"><h4>Modest Cloth Website</h4><br>Experimented with reusable components</div>
+  -->
+  </div>
+</section>
+
+  
+<section id="playground" class="playground">
+  <br>
+  <h2>
+    <img src="./assets/Pink_Playground_icon.svg" width="24" height="24" viewBox="0 0 24 24">
+    Mini-Playground
+  </h2>
+
+  <div class="whack-a-cat-container">
+    <h3>Whack-a-Cat! 🐱</h3>
+    <p>Click at least 10 cats in 20 seconds! You can end early if you want.</p>
+    
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="timer">Time: <span id="time">20</span>s</div>
+    
+    <div class="game-grid">
+      <div class="hole" data-index="0"></div>
+      <div class="hole" data-index="1"></div>
+      <div class="hole" data-index="2"></div>
+      <div class="hole" data-index="3"></div>
+      <div class="hole" data-index="4"></div>
+      <div class="hole" data-index="5"></div>
+      <div class="hole" data-index="6"></div>
+      <div class="hole" data-index="7"></div>
+      <div class="hole" data-index="8"></div>
+    </div>
+
+    <div style="margin-top:1rem;">
+      <button id="startBtn">Start Game</button>
+      <button id="endBtn">End Game</button>
+    </div>
+
+    <div id="gameMessage" style="margin-top:1rem; font-weight:bold; color:#FF6B81; font-size:1.1rem;"></div>
+  </div>
+<p></p>
+
+
+
+<div class="playground_catlost">
+  <h3>Cat Lost! 😿</h3>
+  <p>Help our little furball find its way home!</p>
+
+<div class="scene_catlost" id="scene_catlost">
+  <div class="cat_catlost" id="cat_catlost">
+    🐈
+    <div class="catlost_thought" id="catlost_thought"></div>
+  </div>
+  <div class="house_catlost" id="house_catlost">🏠</div>
+</div>
+
+</div>
+
+
+
+</section>
+ 
+  
+  
+  
+  <!-- 
+<section id="contact" class="contact">
+  <h2>
+    <img src="Pink_Contact_icon.svg" width="24" height="24" viewBox="0 0 24 24">
+    Contact Me
+  </h2>
+  <a href="mailto:shimain_ridzuan@yahoo.com">Email</a>
+  <a href="https://www.linkedin.com/in/ashima-ridzuan" target="_blank">LinkedIn</a>
+  <a href="https://github.com/AshimaRidzuan" target="_blank">GitHub</a>
+</section>
+-->
+
+
+<br><br>
+<br><br>
+<!-- Timeline near footer -->
+<div class="footer-timeline">
+  <div class="timeline-step">
+    <strong>IT Support</strong>
+    <small>2019–Now</small>
+  </div>
+  <div class="timeline-step">
+    <strong>Knowledge Management</strong>
+    <small>2024–Now</small>
+  </div>
+  <div class="timeline-step">
+    <strong>UI/UX</strong>
+    <small>Side Projects</small>
+  </div>
+    <div class="timeline-step">
+    <strong>Web Development</strong>
+    <small>Self-taught</small>
+  </div>
+</div>
+
+<footer>
+  <p>Turning information into organized experiences through both design and code. </p>
+ 2026 <a href="https://www.linkedin.com/in/ashima-ridzuan" target="_blank" style="color:#FF6B81">AshimaRidzuan</a></footer>
+
+
+</body>
+</html>

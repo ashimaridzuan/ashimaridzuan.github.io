@@ -1,0 +1,482 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#FDF6F0; color:#333; scroll-behavior:smooth; font-family: 'Roboto', sans-serif; }
+a { text-decoration:none; color: inherit; }
+
+/* Header */
+header { 
+  display:flex; justify-content:space-between; align-items:center; 
+  padding:1rem 5%; background:#fff; 
+  position:sticky; top:0; z-index:100; 
+  box-shadow:0 2px 5px rgba(0,0,0,0.05); 
+}
+nav { display:flex; gap:1rem; align-items:center;  flex-wrap: wrap;  }
+nav a { font-weight:500; display:flex; align-items:center; transition:0.3s; }
+nav a img { margin-right:5px; fill:#FF6B81; }
+nav a:hover { color:#FF6B81; }
+
+@media (max-width: 360px) {
+  nav { display:flex; align-items:center; }
+}
+
+/* Top nav & hero hover words */
+.top-word, .hero-hover {
+  position: relative;
+  display:inline-block;
+  cursor:pointer;
+  color:#FF6B81;
+  font-weight:bold;
+}
+
+/* Floating words */
+.floating-word {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color:#FF6B81;
+  animation: floatUpWord 1.2s forwards;
+  pointer-events: none;
+}
+@keyframes floatUpWord {
+  0% { transform: translateX(-50%) translateY(0) scale(0.7); opacity:1; }
+  50% { transform: translateX(-50%) translateY(-15px) scale(1.2); opacity:1; }
+  100% { transform: translateX(-50%) translateY(-50px) scale(1); opacity:0; }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:80vh;
+  text-align:center;
+  padding:0 1rem;
+}
+.hero h1 { font-family:'Schoolbell', cursive; font-size:3rem; margin-bottom:1rem; cursor:pointer; }
+.hero .ashima-bouncy {
+  display:inline-block;
+  color:purple;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+.hero p { font-size:1.2rem; margin-bottom:2rem; line-height:1.4; }
+.scroll-keywords { font-weight:bold; color:#188A94; display:inline-block; width:90px; }
+/*scrollwords #ffc57b orange yellow*/
+
+
+
+
+/* Sections */
+section { 
+  padding:5rem 5%; 
+  max-width:1200px; 
+  margin:auto; 
+  opacity:0; 
+  transform: translateY(50px); 
+  transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+section.visible { opacity:1; transform: translateY(0); }
+section h2 { display:flex; align-items:center; font-size:2rem; margin-bottom:1.5rem; }
+section h2 img { margin-right:10px; fill:#FF6B81; }
+
+/* About */
+/*.about p { margin-top:1rem; line-height:1.6; }
+
+/* Skills */
+.skills { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem; }
+.skill { flex:1 1 150px; background:#fff; padding:0.5rem; border-radius:10px; text-align:center; box-shadow:0 3px 8px rgba(0,0,0,0.05); }
+.skill h4 { margin-bottom:0.5rem; color:#FF6B81; }
+
+/*TAG SKILL*/
+tagskill_webdev {
+  background-color: #BFD8D2;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+tagskill_uiux {
+  background-color:#D8BFC5;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+tagskill_itsupportkm {
+  background-color: #C5BFD8;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+tagskill_tool {
+  background-color: #D2D8BF;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+} 
+
+/* Projects */
+.projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-top:2rem; }
+.project-card { text-align: center; background:#fff; padding:1rem; border-radius:10px; box-shadow:0 3px 8px rgba(0,0,0,0.05); transition:0.3s; }
+.project-card:hover { transform:translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+
+/* Contact */
+.contact a { display:inline-block; margin-right:1rem; margin-top:1rem; padding:0.5rem 1rem; border:1px solid #FF6B81; border-radius:5px; color:#FF6B81; transition:0.3s; }
+.contact a:hover { background:#FF6B81; color:#fff; }
+
+/* Footer */
+footer { text-align:center; padding:2rem; margin-top:0.5rem; color:#999; font-size:0.9rem; }
+
+/* Timeline near footer */
+.footer-timeline {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15rem;
+  margin-bottom: 0.5rem; /* space above footer text */
+  flex-wrap: wrap;
+}
+.footer-timeline .timeline-step {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  min-width: 140px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.footer-timeline .timeline-step:hover {
+  transform: translateY(-5px);
+}
+.footer-timeline .timeline-step small {
+  display:block;
+  color:#999;
+  margin-top:3px;
+  font-size:0.75rem;
+}
+
+
+/*Whack-a-cat*/
+.whack-a-cat-container { max-width:400px; margin:auto; text-align:center; }
+.game-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:1rem 0; }
+.hole { background:#eee; border-radius:10px; height:60px; position:relative; overflow:hidden; cursor:pointer; }
+.cat { position:absolute; bottom:-50px; left:50%; transform:translateX(-50%); transition:bottom 0.3s; font-size:2.5rem; }
+.cat.up { bottom:5px; }
+
+#startBtn, #endBtn { padding:0.5rem 1rem; margin:0.5rem; background:#FF6B81; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+#startBtn:hover, #endBtn:hover { background:#FF527A; }
+.score, .timer { font-weight:bold; margin:0.5rem; }
+
+
+/*Cat Lost*/
+.playground_catlost{
+    text-align:center;
+    justify-content: center;
+    padding-top: 80px;
+    margin:auto
+  }
+
+  .scene_catlost {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    background: #f8f6f2;
+    border-radius: 18px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+
+  /* cat */
+  .cat_catlost {
+    font-size: 70px;
+    cursor: grab;
+    user-select: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px; 
+    animation: bounce 1.2s ease-in-out infinite;
+    transition: transform 0.2s;
+  }
+
+  .cat_catlost.home {
+    animation: none; 
+  }
+
+  /* cat hover tooltip */
+  .cat_catlost:hover::after {
+    content: "drag me home";
+    position: absolute;
+    top: -36px;
+    left: -10px;
+    background: #222;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* house */
+  .house_catlost {
+    font-size: 90px;
+    user-select: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s;
+  }
+
+  /* sparkle effect */
+  .sparkle {
+    position: absolute;
+    font-size: 30px;
+    animation: sparkle 0.8s ease-out forwards;
+  }
+
+  @keyframes sparkle {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-30px) scale(1.5); }
+  }
+
+  /* bounce animation */
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }
+
+  /* thought bubble message */
+  .catlost_thought {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #333;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: opacity 0.3s;
+  }
+
+/*END OF THE CAT LOST GAME*/
+
+
+/* Ashima character */
+.ashima-character {
+  position: relative;
+  display: inline-block;
+}
+
+/* Thought Bubble Styles */
+.ashima-thoughtbubble {
+  position: absolute;
+  top: 0; /* vertically center with emoji */
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap; /* default single-line */
+  font-size: 18px;
+  z-index: 5;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-15px); }
+  50% { transform: translateY(0); }
+  70% { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+
+/* Floating words sideways: inside emoji → outside */
+@keyframes floatOut {
+  0% { opacity: 1; transform: translateX(0); }
+  50% { transform: translateX(var(--x2)); }
+  100% { opacity: 0; transform: translateX(var(--x3)); }
+}
+
+/*End of Ashima character */
+
+
+/* Sun Effect */
+/* Sun container */
+#sun-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2.5rem;
+  cursor: grab;
+  z-index: 1000;
+  user-select: none;
+}
+
+#sun-container.dragging { cursor: grabbing; }
+
+/* Tooltip */
+#sun-instruction {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFD6A5;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Overlay (dark effect) */
+#sun-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  z-index: 900;
+}
+
+/* Candle popup */
+#candle-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+}
+
+/* Body effect */
+body.sun_effect {
+  background: #1a1a1a !important;
+  color: #f1f1f1 !important;
+}
+
+body.sun_effect a { color: #ffd6a5 !important; }
+
+/* End of Sun Effect */
+
+
+
+
+/* Responsive CAT LOST 7Jan2025*/
+/* On very small screens, reduce grid to 2 columns so holes remain tappable */
+@media (max-width: 360px) {
+    .game-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* =========================
+   CAT LOST (responsive)
+   ========================= */
+
+/* playground wrapper */
+.playground_catlost { text-align: center; padding-top: 40px; margin: 0 auto; }
+
+/* make scene responsive: width 100% but cap */
+.scene_catlost {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 620px;          /* keep same max but scale down on phones */
+  height: clamp(180px, 30vw, 280px);
+  padding: 14px;
+  background: #f8f6f2;
+  border-radius: 18px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* cat sizing and positioning - absolute positioning preserved */
+.cat_catlost {
+  font-size: clamp(36px, 10vw, 70px);
+  cursor: grab;
+  user-select: none;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  animation: bounce 1.2s ease-in-out infinite;
+  transition: transform .2s, left .12s, top .12s;
+}
+
+/* remove persistent hover tooltip on tiny devices (replace with JS idle message) */
+@media (hover: none) {
+  .cat_catlost:hover::after { content: none; }
+}
+
+/* when cat is home stop animation */
+.cat_catlost.home { animation: none; }
+
+/* thought bubble */
+.catlost_thought {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: clamp(12px, 3vw, 15px);
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: opacity .28s;
+}
+
+/* house sizing */
+.house_catlost {
+  font-size: clamp(48px, 12vw, 96px);
+  user-select: none;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  transition: transform .3s;
+}
+
+/* sparkles */
+.sparkle { position: absolute; font-size: clamp(14px, 3.6vw, 30px); animation: sparkle .8s ease-out forwards; }
+
+/* bounce animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* sparkle animation */
+@keyframes sparkle {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-30px) scale(1.4); }
+}
+/* End of CAT LOST responsive */
+
+
