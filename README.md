@@ -1,6 +1,11 @@
 ﻿Ashima's website: https://ashimaridzuan.github.io
 
 
+# Command to update local VS to Github Respo
+git add . 
+git commit -m "Add comment"
+git push
+
 
 ### CSS, Website Layout, Website Components
 How do I create and structure HTML files?
