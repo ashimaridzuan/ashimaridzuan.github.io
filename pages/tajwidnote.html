@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajwid Master | Learn Quranic Excellence</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary: #2d5a27;
+            --secondary: #c9a227;
+            --light: #f4f7f1;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(45, 90, 39, 0.8), rgba(45, 90, 39, 0.8)), 
+                        url('https://images.unsplash.com/photo-1584281722572-97298375973d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; max-width: 600px; }
+
+        /* Content Grid */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--secondary);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .arabic {
+            font-size: 1.4rem;
+            font-family: "Traditional Arabic", serif;
+        }
+
+        /* Interactive Quiz Section */
+        .interactive-zone {
+            background: var(--primary);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #quiz-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            background: var(--secondary);
+            border: none;
+            padding: 10px 25px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #b08d1f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--dark);
+            color: var(--white);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">TAJWID MASTER</div>
+        <div>Learn. Recite. Perfect.</div>
+    </nav>
+
+    <header>
+        <h1>Art of Tajwid</h1>
+        <p>Enhance your Quranic recitation with the precise rules of pronunciation and rhythm.</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Core Rules (Nun Saakin & Tanween)</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Izhaar <span class="arabic">إظهار</span></h3>
+                <p><strong>Meaning:</strong> To make clear.</p>
+                <p>Recite the Nun clearly without extra nasalization when followed by Throat Letters (ء هـ ع ح غ خ).</p>
+            </div>
+
+            <div class="card">
+                <h3>Idghaam <span class="arabic">إدغام</span></h3>
+                <p><strong>Meaning:</strong> To merge.</p>
+                <p>Merging the Nun into the following letter. Occurs with letters in: <strong>ي ر م ل و ن</strong></p>
+            </div>
+
+            <div class="card">
+                <h3>Ikhfaa <span class="arabic">إخفاء</span></h3>
+                <p><strong>Meaning:</strong> To hide.</p>
+                <p>A hidden sound between Izhaar and Idghaam with Ghunnah (nasalization). Occurs with 15 remaining letters.</p>
+            </div>
+
+            <div class="card">
+                <h3>Iqlab <span class="arabic">إقلاب</span></h3>
+                <p><strong>Meaning:</strong> To convert.</p>
+                <p>Changing the Nun/Tanween into a small 'Meem' sound when followed by the letter <strong>ب</strong>.</p>
+            </div>
+        </div>
+
+        <div class="interactive-zone">
+            <h2>Quick Rule Check</h2>
+            <p>If a Nun Saakin is followed by the letter <strong>"Ba" (ب)</strong>, which rule applies?</p>
+            <div id="quiz-box">
+                <button onclick="checkAnswer('Iqlab')">Iqlab</button>
+                <button onclick="checkAnswer('Izhaar')">Izhaar</button>
+                <button onclick="checkAnswer('Idghaam')">Idghaam</button>
+                <p id="feedback" style="margin-top: 15px; font-weight: bold;"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tajwid Master Portal. Beautiful Recitation for All.</p>
+    </footer>
+
+    <script>
+        // JavaScript Logic
+        function checkAnswer(choice) {
+            const feedback = document.getElementById('feedback');
+            if (choice === 'Iqlab') {
+                feedback.textContent = "Correct! The Nun turns into a Meem sound. 🎉";
+                feedback.style.color = "#82ff82";
+            } else {
+                feedback.textContent = "Not quite. Try again! Hint: It involves 'converting' the sound.";
+                feedback.style.color = "#ff8282";
+            }
+        }
+    </script>
+</body>
+</html>
