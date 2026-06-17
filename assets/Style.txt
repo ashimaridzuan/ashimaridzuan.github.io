@@ -1,0 +1,9 @@
+Primary Background: #FAF7F2 (Warm Alabaster)
+
+Text & Deep Contrast: #2B2927 (Charcoal Walnut)
+
+Secondary Elements: #D9CFC1 (Warm Stone)
+
+Icon / Accent: #F1EB79 (Your Yellow)
+
+Supporting Action Color: #8C7A6B (Muted Taupe)
