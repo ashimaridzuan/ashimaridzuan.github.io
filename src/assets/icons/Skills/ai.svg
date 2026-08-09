@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI icon">
+  <rect width="64" height="64" rx="10" fill="#fff"/>
+  <path fill="#8B5CF6" d="M20 14h24v36H20z"/>
+  <path fill="#fff" d="M24 20h16v4H24zm0 10h10v4H24zm0 10h16v4H24z"/>
+</svg>
