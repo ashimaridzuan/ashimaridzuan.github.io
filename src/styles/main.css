@@ -722,6 +722,50 @@ footer a:hover { text-decoration: underline; }
 body.sun_effect { background: #1a1a1a; color: #f1f1f1; }
 body.sun_effect a { color: #ffd6a5; }
 
+/* Dark mode overrides for all card surfaces */
+body.sun_effect header {
+  background: rgba(26,26,26,0.92);
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+body.sun_effect .top-word a { color: #FF6B81; }
+
+body.sun_effect #about p { color: #e8e4df; }
+
+body.sun_effect .skill {
+  background: #252525;
+  border-color: rgba(255,255,255,0.07);
+}
+body.sun_effect .skill-item {
+  background: #1e1e1e;
+  color: #e8e4df;
+}
+body.sun_effect .skill-item:hover { background: rgba(255,107,129,0.15); }
+body.sun_effect .skill h4 { color: #FF6B81; }
+
+body.sun_effect .project-card {
+  background: #252525;
+  border-color: rgba(255,255,255,0.07);
+  color: #e8e4df;
+}
+body.sun_effect .project-card p { color: #b0a99f; }
+body.sun_effect .project-card--wip { background: #1e1e1e; border-color: rgba(255,255,255,0.05); }
+body.sun_effect .project-card--wip h4 { color: #888; }
+body.sun_effect .project-card--wip p  { color: #666; }
+
+body.sun_effect .hole { background: #2a2a2a; border-color: rgba(255,255,255,0.06); }
+body.sun_effect .scene_catlost { background: #252525; border-color: rgba(255,255,255,0.06); }
+
+body.sun_effect .timeline-step {
+  background: #252525;
+  border-color: rgba(255,255,255,0.07);
+}
+body.sun_effect .timeline-step strong { color: #e8e4df; }
+body.sun_effect .timeline-step small  { color: #777; }
+
+body.sun_effect footer { border-top-color: rgba(255,255,255,0.08); }
+
+body.sun_effect .ashima-thoughtbubble { background: #2a2a2a; }
+
 /* =========================================
    KEYFRAMES (consolidated — no duplicates)
    ========================================= */
