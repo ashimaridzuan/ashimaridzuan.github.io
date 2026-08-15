@@ -1,6 +1,6 @@
-# Ashima Ridzuan Portfolio Website
+# Portfolio Website
 
-A personal portfolio website for Ashima Ridzuan showcasing design and development work, skills, projects, notes, and interactive mini-playground experiences.
+A personal portfolio website showcasing design and development work, skills, projects, notes, and interactive mini-playground experiences.
 
 ## Overview
 
