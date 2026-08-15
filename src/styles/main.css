@@ -603,13 +603,6 @@ section h2 img { flex-shrink: 0; }
   border-top: 3px solid var(--color-accent-light);
   min-width: 140px;
   text-align: center;
-  transition: transform var(--transition), box-shadow var(--transition), border-top-color var(--transition);
-}
-
-.timeline-step:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-  border-top-color: var(--color-accent);
 }
 
 .timeline-step strong {
@@ -792,7 +785,18 @@ body.sun_effect .ashima-thoughtbubble { background: #2a2a2a; }
   header { padding: 0.75rem 4%; }
   nav a  { width: 34px; height: 34px; }
   .game-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-timeline { margin-top: 3rem; }
+  .footer-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 3rem 3% 2rem;
+  }
+  .timeline-step {
+    min-width: unset;
+    padding: 0.6rem 0.5rem;
+  }
+  .timeline-step strong { font-size: 0.78rem; }
+  .timeline-step small  { font-size: 0.7rem; }
 }
 
 @media (max-width: 360px) {
