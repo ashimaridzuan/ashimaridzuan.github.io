@@ -241,12 +241,6 @@ section h2 img { flex-shrink: 0; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(0,0,0,0.04);
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.skill:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
 }
 
 .skill h4 {
@@ -276,7 +270,6 @@ section h2 img { flex-shrink: 0; }
   transition: background var(--transition);
 }
 
-.skill-item:hover { background: rgba(255, 107, 129, 0.08); }
 
 .skill-icon {
   width: 24px;
@@ -333,10 +326,6 @@ section h2 img { flex-shrink: 0; }
   border-left: 3px solid #ccc;
 }
 
-.project-card--wip:hover {
-  transform: none;
-  box-shadow: var(--shadow-sm);
-}
 
 .project-card--wip h4 { color: #666; }
 .project-card--wip p  { color: #777; }
@@ -732,7 +721,6 @@ body.sun_effect .skill-item {
   background: #1e1e1e;
   color: #e8e4df;
 }
-body.sun_effect .skill-item:hover { background: rgba(255,107,129,0.15); }
 body.sun_effect .skill h4 { color: #FF6B81; }
 
 body.sun_effect .project-card {
