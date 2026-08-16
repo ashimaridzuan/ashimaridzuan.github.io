@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catatan Tajwid | Ashima Ridzuan</title>
+  <meta name="description" content="Catatan Tajwid — an interactive Tajwid reference site with built-in quiz, progress tracker, and dark mode by Ashima Ridzuan.">
+  <link rel="icon" href="../assets/meta/favicon_tab_clover.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Schoolbell&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/Project_Catatan_Tajwid.css">
+</head>
+<body>
+  <header>
+    <div>
+      <strong class="top-word"><a href="https://ashimaridzuan.github.io/">Ashima Ridzuan</a></strong>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="https://ashimaridzuan.github.io/#about" aria-label="About Me">
+        <img src="../assets/icons/Base/Pink_icon_aboutMe.svg" alt="" width="20" height="20">
+        <span class="nav-tooltip">About</span>
+      </a>
+      <a href="https://ashimaridzuan.github.io/#skills" aria-label="Skills">
+        <img src="../assets/icons/Base/Pink_icon_skills.svg" alt="" width="20" height="20">
+        <span class="nav-tooltip">Skills</span>
+      </a>
+      <a href="https://ashimaridzuan.github.io/#projects" aria-label="Projects">
+        <img src="../assets/icons/Base/Pink_icon_code.svg" alt="" width="20" height="20">
+        <span class="nav-tooltip">Projects</span>
+      </a>
+      <a href="https://ashimaridzuan.github.io/#contact" aria-label="Contact">
+        <img src="../assets/icons/Base/Pink_icon_contact.svg" alt="" width="20" height="20">
+        <span class="nav-tooltip">Contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="project-case-page">
+
+    <!-- Hero -->
+    <section class="project-case-hero">
+      <div class="hero-copy">
+        <span class="project-label">PERSONAL PROJECT</span>
+        <h1>Catatan Tajwid</h1>
+        <p class="project-subtitle">Interactive Tajwid Reference & Learning Tool</p>
+        <p class="project-summary">An interactive Tajwid reference site with a built-in quiz, progress tracker, and dark mode — designed to make learning the rules of Quranic recitation clearer, structured, and more engaging.</p>
+        <div class="project-actions">
+          <a class="button primary" href="https://ashimaridzuan.github.io/catatan-tajwid/" target="_blank" rel="noopener noreferrer">Visit Live Site ↗</a>
+          <a class="button secondary" href="https://ashimaridzuan.github.io/">← Back to Homepage</a>
+        </div>
+        <div class="badge-row">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Responsive Design</span>
+          <span class="badge">Dark Mode</span>
+        </div>
+        <div class="project-highlights">
+          <div class="highlight-card">
+            <strong>Interactive Quiz</strong>
+            <p>Test knowledge with built-in quizzes for each Tajwid rule — read, answer, and move on.</p>
+          </div>
+          <div class="highlight-card">
+            <strong>Progress Tracker</strong>
+            <p>Track which rules you've studied across sessions using localStorage — no login needed.</p>
+          </div>
+          <div class="highlight-card">
+            <strong>Dark Mode</strong>
+            <p>Comfortable for night-time study sessions, toggled with a single click.</p>
+          </div>
+          <div class="highlight-card">
+            <strong>Structured Reference</strong>
+            <p>Card-based layout so each Tajwid rule feels self-contained and easy to scan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="project-mockup-section">
+      <div class="hero-visual">
+        <figure class="image-figure">
+          <div class="screenshot-placeholder">
+            <span>Screenshots coming soon</span>
+          </div>
+          <figcaption>Catatan Tajwid — interface preview coming soon.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Case Study -->
+    <section class="project-case-details">
+
+      <article class="detail-block">
+        <h3>Why I Built This</h3>
+        <p>Learning Tajwid rules often means digging through dense Arabic text scattered across books and websites with no consistent structure. I wanted a clean, modern reference that I'd actually enjoy using myself — something that feels closer to a study app than a scanned textbook. As someone learning alongside building, this project let me combine two things I care about: improving my own Tajwid and practising front-end development.</p>
+      </article>
+
+      <article class="detail-block">
+        <h3>Design Decisions</h3>
+        <div class="solution-section">
+          <p>The layout is intentionally minimal so Arabic text is easy to read without visual clutter. Each rule lives in its own card, making the content feel self-contained and scannable rather than overwhelming. Dark mode was built in from the beginning — a lot of Quran reading and study happens at night, and straining against a bright white screen felt like the wrong experience.</p>
+        </div>
+        <div class="solution-section">
+          <p>The quiz mechanic was kept deliberately simple: read the rule, answer a question, move on. No timers, no penalties — just reinforcement. The progress tracker uses localStorage so your progress persists between sessions without needing any backend or login.</p>
+        </div>
+      </article>
+
+      <article class="detail-block">
+        <h3>Challenges</h3>
+        <ul class="challenge-list">
+          <li><strong>Bilingual layout:</strong> Structuring Arabic text alongside English explanations without it feeling misaligned or awkward required careful CSS handling of right-to-left text direction within a left-to-right layout.</li>
+          <li><strong>Client-side quiz logic:</strong> Building a quiz system that works entirely without a backend meant managing all state in JavaScript and making sure question randomisation felt fair.</li>
+          <li><strong>Persistent progress:</strong> The progress tracker needed to remember what you'd studied between visits — solved using localStorage with a simple key-value structure per rule.</li>
+        </ul>
+      </article>
+
+      <article class="detail-block">
+        <h3>Thinking Behind It</h3>
+        <p>This is a passion project. I wanted to prove to myself that I could build something fully functional from scratch — from content architecture to front-end logic — and that learning tools don't have to be dry or boring. Islamic education deserves the same level of thoughtful UX that goes into any other learning platform, and this is my small step toward that.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Turning information into organized experiences through both design and code.</p>
+    <p>© 2026 <a href="https://www.linkedin.com/in/ashima-ridzuan" target="_blank" rel="noreferrer">Ashima Ridzuan</a></p>
+  </footer>
+
+  <script src="../javascript/main.js" defer></script>
+</body>
+</html>
