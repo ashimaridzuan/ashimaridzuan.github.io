@@ -32,6 +32,25 @@ if (heroHover) {
   heroHover.addEventListener('mouseenter', () => { createFloatingWord(heroHover); });
 }
 
+// Active nav highlighting based on scroll position
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+const navSections = [...navLinks]
+  .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+  .filter(Boolean);
+
+function updateActiveNav() {
+  const scrollY = window.scrollY + 130;
+  let current = '';
+  navSections.forEach(sec => {
+    if (sec.offsetTop <= scrollY) current = sec.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('nav-active', link.getAttribute('href') === '#' + current);
+  });
+}
+window.addEventListener('scroll', updateActiveNav);
+updateActiveNav();
+
 // Scroll-reveal for sections
 const sections = document.querySelectorAll('section:not(.hero)');
 function fadeInOnScroll(){

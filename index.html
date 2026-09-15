@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="google-site-verification" content="95PTpnsGTVh3wC7aJR4b4453OIDSJb0Elz6aOqmv4CI" />
-<meta name="msvalidate.01" content="B70FC9FEB7F1219D547E4CB9B3F82780" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ashima Ridzuan | Front-End Developer & Japanese Speaker</title>
 <meta name="description" content="Portfolio of Ashima Ridzuan, an aspiring Front-End Developer (Japanese Speaker) with experience in IT operations, technical support, and knowledge management. Explore web development projects, technical skills, and professional growth.">
@@ -11,7 +10,6 @@
 <!-- Open Graph / Social Sharing -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashimaridzuan.github.io/">
-<link rel="canonical" href="https://ashimaridzuan.github.io/">
 <meta property="og:title" content="Ashima Ridzuan | Front-End Developer & Japanese Speaker">
 <meta property="og:description" content="Aspiring front-end developer (Japanese Speaker) with experience in IT operations/technical support, and knowledge management. Building modern, accessible, and user-friendly web experiences.">
 <meta property="og:image" content="./src/assets/images/AshimaRidzuan_avatar.svg">
@@ -72,13 +70,13 @@
       <img src="./src/assets/icons/Base/Pink_icon_code.svg" alt="" width="20" height="20">
       <span class="nav-tooltip">Projects</span>
     </a>
-    <a href="#playground" aria-label="Playground">
-      <img src="./src/assets/icons/Base/Pink_icon_playground.svg" alt="" width="20" height="20">
-      <span class="nav-tooltip">Playground</span>
-    </a>
     <a href="#notes" aria-label="Notes">
       <img src="./src/assets/icons/Base/Pink_icon_notes.svg" alt="" width="20" height="20">
       <span class="nav-tooltip">Notes</span>
+    </a>
+    <a href="#playground" aria-label="Playground">
+      <img src="./src/assets/icons/Base/Pink_icon_playground.svg" alt="" width="20" height="20">
+      <span class="nav-tooltip">Playground</span>
     </a>
     <a href="#contact" aria-label="Contact">
       <img src="./src/assets/icons/Base/Pink_icon_contact.svg" alt="" width="20" height="20">
@@ -90,6 +88,9 @@
 <section class="hero">
   <h1 id="hero-text">Hello, I'm <span class="hero-hover ashima-bouncy">Ashima</span></h1>
   <p>Passionate about creating <span class="scroll-keywords"></span> experiences.</p>
+  <div class="hero-cta">
+    <a href="#projects" class="hero-btn hero-btn--primary">View my projects →</a>
+  </div>
   <div class="ashima-character">
     <img src="./src/assets/images/AshimaRidzuan_avatar.svg" alt="Ashima character illustration" id="ashima_character_svg" width="120">
     <div class="ashima-thoughtbubble" id="ashima-thoughtbubble"></div>
@@ -101,7 +102,45 @@
     <img src="./src/assets/icons/Base/Pink_icon_aboutMe.svg" alt="" width="24" height="24">
     About Me
   </h2>
-  <p>My journey started in IT Support and Knowledge Management, where I learned that good technology is not only about making systems work, but also about helping people find answers and solutions quickly and easily. Today, I bring that experience and perspective into front-end development, UX/UI design and AI agent development. My goal is to create responsive interfaces that are clear, accessible, reliable, friendly, minimal, and playful. <img src="./src/assets/meta/favicon_tab_clover.svg" alt="" width="15" class="inline-icon"></p>
+  <p>My journey started in IT Support and Knowledge Management, where I learned that good technology is not only about making systems work, but also about helping people find answers and solutions quickly and easily. Today, I bring that experience into front-end development, UX/UI design, and AI agent development — and I do it in both <strong>English and Japanese</strong> 🇯🇵. My goal is to create responsive interfaces that are clear, accessible, reliable, friendly, minimal, and playful. <img src="./src/assets/meta/favicon_tab_clover.svg" alt="" width="15" class="inline-icon"></p>
+
+  <div class="about-timeline">
+    <div class="about-timeline__item">
+      <div class="about-timeline__year">2021</div>
+      <div class="about-timeline__content">
+        <strong>IT Solution Consultant</strong>
+        <p>Resolved technical issues, supported users, and learned how enterprise IT operations work.</p>
+      </div>
+    </div>
+    <div class="about-timeline__item">
+      <div class="about-timeline__year">2023</div>
+      <div class="about-timeline__content">
+        <strong>Infra Tech Support</strong>
+        <p>Supporting enterprise operations, process governance, and service management initiatives.</p>
+      </div>
+    </div>
+    <div class="about-timeline__item">
+      <div class="about-timeline__year">2024</div>
+      <div class="about-timeline__content">
+        <strong>Knowledge Management</strong>
+        <p>Managed knowledge articles, improved information accessibility, and supported process documentation.</p>
+      </div>
+    </div>
+    <div class="about-timeline__item">
+      <div class="about-timeline__year">2026</div>
+      <div class="about-timeline__content">
+        <strong>Case Management</strong>
+        <p>Worked on service delivery, customer support workflows, and operational process improvement.</p>
+      </div>
+    </div>
+    <div class="about-timeline__item about-timeline__item--current">
+      <div class="about-timeline__year">Now</div>
+      <div class="about-timeline__content">
+        <strong>ServiceNow Developer <span class="about-timeline__badge">Learning & Building</span></strong>
+        <p>Developing ServiceNow skills through personal projects, automation workflows, and CSA preparation.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="skills">
@@ -182,6 +221,22 @@
   </div>
 </section>
 
+<section id="notes">
+  <h2>
+    <img src="./src/assets/icons/Base/Pink_icon_notes.svg" alt="" width="24" height="24">
+    Notes
+  </h2>
+  <p class="notes-intro">Things I'm learning, written down so I don't forget.</p>
+  <div class="notes-grid">
+    <a class="note-card" href="https://ashimaridzuan.github.io/js-fundamentals-notes/" target="_blank" rel="noopener noreferrer">
+      <span class="note-card__tag">JavaScript</span>
+      <h4>JS Fundamentals Notes</h4>
+      <p>Personal notes on JavaScript fundamentals — variables, functions, scope, arrays, and more.</p>
+      <span class="note-card__link">Read notes ↗</span>
+    </a>
+  </div>
+</section>
+
 <section id="playground" class="playground">
   <h2>
     <img src="./src/assets/icons/Base/Pink_icon_playground.svg" alt="" width="24" height="24">
@@ -224,14 +279,6 @@
   </div>
 </section>
 
-<section id="notes">
-  <h2>
-    <img src="./src/assets/icons/Base/Pink_icon_notes.svg" alt="" width="24" height="24">
-    Notes
-  </h2>
-  <p class="notes-wip">Coming soon — stay tuned! ✏️</p>
-</section>
-
 <section id="contact" class="contact">
   <h2>
     <img src="./src/assets/icons/Base/Pink_icon_contact.svg" alt="" width="24" height="24">
@@ -242,6 +289,7 @@
     <a href="mailto:shimain_ridzuan@yahoo.com">✉ Email</a>
     <a href="https://www.linkedin.com/in/ashima-ridzuan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://github.com/ashimaridzuan" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="#" target="_blank" rel="noopener noreferrer">View Resume</a>
   </div>
 </section>
 
