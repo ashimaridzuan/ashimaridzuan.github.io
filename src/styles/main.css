@@ -528,6 +528,71 @@ body.sun_effect .about-timeline__item--current::after { background: var(--color-
 }
 
 /* =========================================
+   CERTIFICATIONS
+   ========================================= */
+.certifications {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: var(--color-surface);
+  padding: 1.2rem 1.6rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-left: 3px solid var(--color-accent);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.cert-card__logo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-card__logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.cert-card__info {
+  flex: 1;
+}
+
+.cert-card__info h4 {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.cert-card__info span {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.cert-card__link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* =========================================
    PLAYGROUND
    ========================================= */
 .whack-a-cat-container {
