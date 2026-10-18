@@ -1,5 +1,5 @@
 // Auto-scroll keywords
-const keywords = ['clear','friendly','minimal','playful','organized','thoughtful'];
+const keywords = ['scalable','cloud-native','reliable','automated','modern','thoughtful','clear','organized','friendly','minimal','playful'];
 const scrollEl = document.querySelector('.scroll-keywords');
 let index = 0;
 function scrollKeyword(){
